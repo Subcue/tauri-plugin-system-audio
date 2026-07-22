@@ -1,0 +1,5 @@
+"$schema" = "schemas/schema.json"
+
+[default]
+description = "Allows starting and stopping audio capture and querying microphone permission status."
+permissions = ["allow-start", "allow-stop", "allow-permission-status"]
