@@ -1,5 +1,9 @@
 # tauri-plugin-system-audio
 
+[![crates.io](https://img.shields.io/crates/v/tauri-plugin-system-audio.svg)](https://crates.io/crates/tauri-plugin-system-audio)
+[![docs.rs](https://docs.rs/tauri-plugin-system-audio/badge.svg)](https://docs.rs/tauri-plugin-system-audio)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 **Capture what your app hears *and* what the computer plays — with echo cancellation — in Tauri 2.**
 
 Microphone + system audio (WASAPI loopback) dual capture for Windows, with WebRTC **AEC3 echo cancellation**, anti-aliased resampling to 16 kHz mono PCM, and 10 Hz level metering. Extracted from the production desktop app of [SubcueAI](https://subcue.ai), where it feeds live dual-stream speech-to-text during video calls.
@@ -31,9 +35,13 @@ Capturing **system audio** in a Tauri app is a recurring pain point: browsers ca
 
 Rust side (`src-tauri/Cargo.toml`):
 
+```sh
+cargo add tauri-plugin-system-audio
+```
+
 ```toml
 [dependencies]
-tauri-plugin-system-audio = { git = "https://github.com/Subcue/tauri-plugin-system-audio" }
+tauri-plugin-system-audio = "0.1"
 ```
 
 Register the plugin:
