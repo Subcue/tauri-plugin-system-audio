@@ -1,6 +1,8 @@
 //! Dual audio capture for Tauri 2 — microphone + system audio (WASAPI
 //! loopback) with WebRTC AEC3 echo cancellation.
 //!
+//! Extracted from the production desktop app of [SubcueAI](https://subcue.ai).
+//!
 //! ```text
 //!   ┌─────────────┐    ┌─────────────┐    ┌───────────┐
 //!   │ mic capture │───▶│  resampler  │───▶│   APM     │──▶ FrameEvent::Pcm (mic)
