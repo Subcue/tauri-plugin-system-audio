@@ -1,8 +1,7 @@
 /**
  * TypeScript bindings for tauri-plugin-system-audio.
  *
- * Copy this file into your app (or import it directly) — the plugin does
- * not currently publish an npm package.
+ * Published as `@subcueai/tauri-plugin-system-audio`.
  */
 import { Channel, invoke } from '@tauri-apps/api/core';
 

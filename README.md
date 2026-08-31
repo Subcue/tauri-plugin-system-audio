@@ -1,5 +1,6 @@
 # tauri-plugin-system-audio
 
+[![npm](https://img.shields.io/npm/v/@subcueai/tauri-plugin-system-audio.svg)](https://www.npmjs.com/package/@subcueai/tauri-plugin-system-audio)
 [![crates.io](https://img.shields.io/crates/v/tauri-plugin-system-audio.svg)](https://crates.io/crates/tauri-plugin-system-audio)
 [![docs.rs](https://docs.rs/tauri-plugin-system-audio/badge.svg)](https://docs.rs/tauri-plugin-system-audio)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -74,10 +75,12 @@ The plugin resolves the bundled dll automatically (dev *and* build). **Missing d
 
 ## Use (JavaScript)
 
-Copy [`guest-js/index.ts`](guest-js/index.ts) into your app:
+```sh
+npm i @subcueai/tauri-plugin-system-audio
+```
 
 ```ts
-import { start, stop, decodePcm } from './system-audio';
+import { start, stop, decodePcm } from '@subcueai/tauri-plugin-system-audio';
 
 await start((event) => {
   switch (event.kind) {

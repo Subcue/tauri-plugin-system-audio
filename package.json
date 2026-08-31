@@ -1,0 +1,55 @@
+{
+  "name": "@subcueai/tauri-plugin-system-audio",
+  "version": "0.1.1",
+  "description": "Tauri 2 JS bindings for dual audio capture — microphone + system audio (WASAPI loopback) with WebRTC AEC3.",
+  "license": "MIT",
+  "author": "Subcue AI LLC <aaron@subcueai.com>",
+  "homepage": "https://subcue.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Subcue/tauri-plugin-system-audio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Subcue/tauri-plugin-system-audio/issues"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "tauri",
+    "tauri-plugin",
+    "audio",
+    "wasapi",
+    "loopback",
+    "echo-cancellation",
+    "subcueai"
+  ],
+  "dependencies": {
+    "@tauri-apps/api": "^2"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  }
+}
