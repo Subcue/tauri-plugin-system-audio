@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": "guest-js",
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["guest-js/index.ts"]
+}
